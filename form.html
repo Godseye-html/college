@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="forum">
+        <input id="name" type="text" placeholder="Enter Your Name" required min=5>
+        <input id="email" type="text" placeholder="Enter Your Email" required min=5>
+        <input id="age" type="number" placeholder="Enter Your Age" required min=18 max=100>
+        <input placeholder="Phone-no" type="text">
+        <input placeholder="Father name" type="text">
+        <input placeholder="Mother name" type="text">
+        <label>Which Option Best Describes Your Current Role?</label>
+        <select>
+            <option value=""></option>
+            <option value="Challnges">student</option>
+            <option value="Project">post graduate</option>
+            <option value="Community">pre graduate</option>
+            <option value="Open source">pass out</option>
+        </select>
+        <label id="align-item">Which Course?</label>
+        <label id="align-item"><input type="checkbox">BCA</label>
+        <label id="align-item"><input type="checkbox">PGDCA</label>
+        <label id="align-item"><input type="checkbox">DCA</label>
+        <textarea id="suggections" cols="30" rows="10" placeholder="ENTER ISSUE HERE...."></textarea>
+        <button id="mybutton"><a href="#">Submit</a></button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

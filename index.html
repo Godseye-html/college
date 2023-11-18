@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noob college</title>
+</head>
+<script src="https://kit.fontawesome.com/cd048bfb5b.js" crossorigin="anonymous"></script>
+<!-- external css question -->
+<link rel="stylesheet" href="./styles.css">
+<style>
+    /* font face and usage ans internal css */
+    @font-face {
+        font-family: "Signatie";
+        font-style: normal;
+        font-weight: lighter;
+        src: local("Signatie"), url("Signatie.woff") format("woff");
+    }
+
+    h1 {
+        display: grid;
+        place-items: center;
+        font-family: Signatie;
+        min-height: 85vh;
+    }
+
+    .hover:hover {
+        color: black;
+    }
+</style>
+
+<body>
+    <!-- website attractive with inline css and importing of image online and folder and marquee -->
+    <main
+        style="display: grid;align-items:center;justify-content: center;grid-auto-flow: column;min-height: 50px;align-content: center;gap: 2rem;max-width:100vw;margin: 0px 10px;">
+        <a href="#timetable">Time Table</a>
+        <a href="#marquee">Marquee is below</a>
+        <a href="#area">Area of triangle
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+        <a href="#datetime">dateTime
+            <i class="fa-solid fa-angle-down"></i>
+        </a>
+        <a class="hover" href="./form.html" target="_blank"
+            style="min-height: 50px;min-width: 100px;background: url(https://images.pexels.com/photos/11420229/pexels-photo-11420229.jpeg?auto=compress&cs=tinysrgb&w=400)center/cover no-repeat;display:inline-block;border: .1rem solid rgb(192, 28, 28);margin: 0;padding: 0;position: relative;">
+            <span class="hover" style="position: absolute;right:-65px;top:5px;z-index:-1;">forum</span>
+        </a>
+    </main>
+    <div class="img"
+        style="background:url(https://images5.alphacoders.com/880/880175.jpg)center/cover no-repeat fixed;min-height: calc(85vh);margin: 0px 10px;">
+        <h1 style="font-size: 80px;">Great college</h1>
+    </div>
+    <div class="timetable" id="timetable">
+        <table style="background: black;">
+            <tbody style="background: grey;">
+                <tr>
+                    <th>S.no</th>
+                    <th>date</th>
+                    <th>subject</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>12/12/2023</th>
+                    <th>Operating system</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>12/12/2023</th>
+                    <th>RDBMS with MYSQL</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>12/12/2023</th>
+                    <th>WEB DEVELOPMENT</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>12/12/2023</th>
+                    <th>ANIMATION AND MEDIA</th>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <th>12/12/2023</th>
+                    <th>LINUX&SHELL PROGRAMMING</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="area">
+        <label>fill length</label>
+        <input type="text" class="length">
+        <label>fill width</label>
+        <input type="text" class="width">
+        <button class="btn" style="background: grey;border: none;cursor: pointer;">sumbit</button>
+    </div>
+    <div id="datetime">
+        <span class="date"></span>
+    </div>
+    <marquee id="marquee" style="margin: 10px 40px;" direction="left" onmouseover="this.stop();"
+        onmouseout="this.start();">
+        <a href="#" target="_blank" class="text-white">•projects</a>
+        <a href="#" target="_blank" class="text-white">•date and time</a>
+    </marquee>
+</body>
+<script src="app.js"></script>
+
+</html>
